@@ -1,0 +1,50 @@
+/**
+ * index.scss
+ * - Add any styles you want here!
+ */
+ html {
+    font-size: 10px;
+  }
+  
+  body {
+    text-align: center;
+    color: #333;
+    margin: 0rem;
+    font-size: 1.6rem;
+  }
+  
+  #main {
+    margin: 30px 8px;
+    padding: 15px;
+    display: grid;
+    background: #eee;
+  }
+  
+  h1 {
+    font-size: 4rem;
+  }
+  
+  #title {
+    text-align: center;
+  }
+  
+  #img-div {
+    background: white;
+    margin: 0;
+    padding: 15px;
+  }
+  
+  #img-caption {
+    margin: 15px 0px 5px 0px;
+  }
+  
+  img {
+    display: block;
+    margin: auto;
+    max-width: 100%;
+    hight: 0 auto;
+  }
+  
+  a {
+    color: #477ca7;
+  }
