@@ -1,0 +1,141 @@
+* {
+    margin: 0px;
+    box-sizing: border-box;
+    font-size: 1.08972rem;
+    font-weight: 400;
+  }
+  .container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1;
+    position: 0px;
+  }
+  .div-header{
+    width: 100%;
+    bottom: 40px;
+  }
+  .div-main{
+    width: 100%;
+    top: 40px;
+    margin-top: 10vh;
+  }
+  ul {
+    list-style: none;
+  }
+  section > ul {
+    list-style-type: square;
+  }
+  section > ul > li {
+    margin: 4px
+  }
+  header {
+    width: 100%;
+    color: #000;
+    font-size: 1.8rem;
+    text-align: center;
+    padding: 10px;
+  }
+  header h1{
+    color: #fff;
+    font-size: 1.8rem;
+    cursor: pointer;
+  }
+  .nav-header{
+    position: fixed;
+    width: 100%;
+    background-color: rgb(148, 7, 7);
+    height: 10vh;
+  }
+  
+  .main-section > header {
+    text-align: left;
+  }
+  #main-doc {
+    /*position: absolute;*/
+    padding: 1.245rem;
+  }
+  p {
+    margin-top: 10px;
+    padding: 5px;
+    text-align: justify;
+  }
+  .main-section {
+    margin: 0rem;
+    
+  }
+  .div-code {
+    font-family: monospace;
+    width: 80%;
+    margin: 2px auto;
+    padding: 15px;
+    background: #c1c1c1;
+  }
+  .div-menu {
+    display: none;
+    background: gray;
+    position: fixed;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    border-right: solid;
+    margin-bottom: 4rem;
+    margin-top: 10vh;
+  }
+  .div-menu  ul {
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 88%;
+    padding: 0;
+  }
+  .div-menu  li {
+    position: relative;
+    color: #4d4e53;
+    list-style: none;
+    border-top: 1px solid;
+    width: 100%;
+  }
+  .div-menu  a {
+    display: block;
+    padding: 10px 30px;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .div-menu > header {
+    font-size: 1.42em;
+    background-color: white;
+  }
+  /* 
+    ##Device = Laptops, Desktops
+    ##Screen = B/w 1025px to 1280px
+  */
+  
+  @media (min-width: 1025px) and (max-width: 1280px) {
+    .container{
+      grid-template-columns: 23% auto;
+    }
+    .nav-header header h1{
+      font-size: 1.78rem;
+    }
+    .div-menu{
+      display: block;
+    }
+    .div-main{
+      top: 0px;
+    }
+  }
+  
+  /* 
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+  */
+  
+  @media (min-width: 481px) and (max-width: 767px) {
+    .div-header {
+      width: 100%;
+    }
+
+    .div-main{
+      width: 100%;
+    }
+  }
